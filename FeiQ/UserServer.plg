@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UserServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\hsyl\AppData\Local\Temp\RSP2534.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/UserServer.pdb" /debug /machine:I386 /out:"Debug/UserServer.exe" /pdbtype:sept 
+.\Debug\UserServer.obj
+]
+Creating command line "link.exe @C:\Users\hsyl\AppData\Local\Temp\RSP2534.tmp"
+<h3>Output Window</h3>
+Linking...
+UserServer.obj : error LNK2001: unresolved external symbol "public: void __thiscall CChatView::AddUser(class CString)" (?AddUser@CChatView@@QAEXVCString@@@Z)
+UserServer.obj : error LNK2001: unresolved external symbol "public: void __thiscall CUserView::AddUser(class CString,class CString,class CString)" (?AddUser@CUserView@@QAEXVCString@@00@Z)
+UserServer.obj : error LNK2001: unresolved external symbol "public: void __thiscall CChatView::DelUser(class CString)" (?DelUser@CChatView@@QAEXVCString@@@Z)
+UserServer.obj : error LNK2001: unresolved external symbol "public: void __thiscall CUserView::DelUser(class CString)" (?DelUser@CUserView@@QAEXVCString@@@Z)
+UserServer.obj : error LNK2001: unresolved external symbol "public: void __thiscall CChatView::AddChat(class CString,class CString)" (?AddChat@CChatView@@QAEXVCString@@0@Z)
+nafxcwd.lib(thrdcore.obj) : error LNK2001: unresolved external symbol __endthreadex
+nafxcwd.lib(thrdcore.obj) : error LNK2001: unresolved external symbol __beginthreadex
+libcd.lib(crt0.obj) : error LNK2001: unresolved external symbol _main
+Debug/UserServer.exe : fatal error LNK1120: 8 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+UserServer.exe - 9 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

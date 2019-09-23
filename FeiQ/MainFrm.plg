@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MainFrm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\hsyl\AppData\Local\Temp\RSPD0D6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/MainFrm.pdb" /debug /machine:I386 /out:"Debug/MainFrm.exe" /pdbtype:sept 
+.\Debug\MainFrm.obj
+]
+Creating command line "link.exe @C:\Users\hsyl\AppData\Local\Temp\RSPD0D6.tmp"
+<h3>Output Window</h3>
+Linking...
+MainFrm.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall CFileServer::~CFileServer(void)" (??1CFileServer@@UAE@XZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall CUserClient::~CUserClient(void)" (??1CUserClient@@UAE@XZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall CUserServer::~CUserServer(void)" (??1CUserServer@@UAE@XZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: __thiscall CFileServer::CFileServer(void)" (??0CFileServer@@QAE@XZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: __thiscall CUserClient::CUserClient(void)" (??0CUserClient@@QAE@XZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: __thiscall CUserServer::CUserServer(void)" (??0CUserServer@@QAE@XZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: static struct CRuntimeClass const CChatView::classCChatView" (?classCChatView@CChatView@@2UCRuntimeClass@@B)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: static struct CRuntimeClass const CUserView::classCUserView" (?classCUserView@CUserView@@2UCRuntimeClass@@B)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: int __thiscall CUserClient::Broadcast(void)" (?Broadcast@CUserClient@@QAEHXZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: int __thiscall CFileServer::InitServer(void)" (?InitServer@CFileServer@@QAEHXZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: int __thiscall CUserClient::InitClient(void)" (?InitClient@CUserClient@@QAEHXZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: int __thiscall CUserServer::InitServer(void)" (?InitServer@CUserServer@@QAEHXZ)
+MainFrm.obj : error LNK2001: unresolved external symbol "public: int __thiscall CUserClient::UserQuit(void)" (?UserQuit@CUserClient@@QAEHXZ)
+nafxcwd.lib(thrdcore.obj) : error LNK2001: unresolved external symbol __endthreadex
+nafxcwd.lib(thrdcore.obj) : error LNK2001: unresolved external symbol __beginthreadex
+libcd.lib(crt0.obj) : error LNK2001: unresolved external symbol _main
+Debug/MainFrm.exe : fatal error LNK1120: 16 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+MainFrm.exe - 17 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
